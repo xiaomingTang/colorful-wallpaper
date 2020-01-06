@@ -1,0 +1,52 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body,
+#app,
+.canvas {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#app {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.unselectable {
+  user-select: none;
+}
+
+::selection {
+  background: #fe7300;
+  color: white;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.ant-table-thead > tr > th {
+  background-color: #efecec;
+  border-bottom: 1px solid #b1b1b1;
+}
+
+.ant-modal-confirm-body > .anticon + .ant-modal-confirm-title + .ant-modal-confirm-content {
+  margin-left: 0;
+}
